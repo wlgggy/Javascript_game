@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falling Block Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img src="./not.png" alt="" />
+    <div class="start-screen">
+      <h1>지yo 피하기</h1>
+      <h3>조별 과제를 기간 내 제출하지 않은 은상이를 구해주세요</h3>
+      <input type="text" id="usernameInput" placeholder="Enter your name" />
+      <button id="startButton">Start Game</button>
+    </div>
+    <img src="./hover.png" alt="" />
+    <canvas id="gameCanvas" style="display: none"></canvas>
+
+    <div id="neonMessage" class="neon-text">지효가 화났다!!!!!</div>
+    <audio id="levelUpSound" src="./sound.mp3"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>

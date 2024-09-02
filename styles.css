@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+}
+
+.neon-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #ff0000, 0 0 30px #ff0000, 0 0 35px #ff0000;
+  display: none; /* 기본적으로 숨김 */
+}
+
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("background.jpg"); /* 배경 이미지 추가 */
+  background-size: cover;
+  background-position: center;
+}
+
+#startButton {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#startButton:hover {
+  background-color: #218838;
+}
+
+#usernameInput {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+canvas {
+  background-color: #222;
+  display: none; /* 게임 시작 전에는 숨김 */
+  border: 2px solid #fff;
+  width: 1200px; /* 게임 화면 크기 조정 */
+  height: 800px; /* 게임 화면 크기 조정 */
+}
